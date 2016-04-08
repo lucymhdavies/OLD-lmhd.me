@@ -9,4 +9,7 @@ get '/' do
 	erb :index
 end
 
+get '/ash/?' do
+	erb :ash
+end
 

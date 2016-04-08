@@ -1,9 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>LMHD Sinatra Boilerplate</title>
+
+<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0" />
+<title>LMHD</title>
+
+<style type="text/css">
+    #contact {
+        color: white; text-shadow: black 0.1em 0.1em 0.2em; font-size: 2em;
+        font-family: sans-serif;
+    }
+    #contact p {
+        margin: 0.5em;
+    }
+    
+    .sociallink {
+        text-decoration: none;
+        opacity: 0.4;
+        
+        
+  -webkit-transition: all 0.3s ease-out;  /* Safari 3.2+, Chrome */
+     -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.5–12.00 */
+          transition: all 0.3s ease-out;  /* Firefox 16+, Opera 12.50+ */
+
+    }
+    .sociallink:hover {
+        opacity: 1;
+    }
+
+abbr {border-bottom: 1px dotted black;}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    #contact {
+        color: white; text-shadow: black 0.1em 0.1em 0.2em; font-size: 1.5em;
+        font-family: sans-serif;
+    }
+
+body {
+background: url('http://bg.pdi.sk/px_by_Gre3g.png');
+}
+
+    #card {
+        text-align: center;
+        background: url('http://bg.pdi.sk/gplaypattern.png');
+            -webkit-box-shadow:  0 0 10px 0 rgba(200, 200, 200, 0.8);
+            -moz-box-shadow:  0 0 10px 0 rgba(200, 200, 200, 0.8);
+        box-shadow:  0 0 10px 0 rgba(200, 200, 200, 0.8);
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+    #cardinner {
+        padding: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #cardinner h1 {
+        font-family: 'Lobster Two', cursive;
+        font-size: 3em;
+        color: #333;
+        margin:0;
+        padding:0;
+    }
+    #cardinner h2 {
+        font-family: 'Lobster Two', cursive;
+        font-size: 1.5em;
+        color: #999;
+        margin:0;
+        padding:0;
+    }
+    
+    #icons {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        margin-left: -8px; margin-right: -8px;
+        padding-left: 8px; padding-right: 8px;
+    }
+    #icons::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    #logo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    #card {
+        text-align: center;
+        width: 500px;
+        background: url('http://bg.pdi.sk/gplaypattern.png');
+            -webkit-box-shadow:  0 0 10px 0 rgba(200, 200, 200, 0.8);
+            -moz-box-shadow:  0 0 10px 0 rgba(200, 200, 200, 0.8);
+        box-shadow:  0 0 10px 0 rgba(200, 200, 200, 0.8);
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+        border-radius: 2px;
+        position: absolute; top: 30px; right: 30px;
+    }
+    #cardinner {
+        padding: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #cardinner h1 {
+        font-family: 'Lobster Two', cursive;
+        font-size: 5em;
+        color: #333;
+        margin:0;
+        padding:0;
+    }
+    #cardinner h2 {
+        font-family: 'Lobster Two', cursive;
+        font-size: 2em;
+        color: #999;
+        margin:0;
+        padding:0;
+    }
+    
+    body {
+        padding: 0;
+        margin: 30px;
+        background: url('http://bg.pdi.sk/px_by_Gre3g.png');
+    }
+    
+    #logo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    #icons {
+        position: fixed;
+        bottom: 20px;
+        left: 20px
+    }
+}
+</style>
+
 </head>
 <body>
+<img id="logo" src="http://p.pdi.sk/LMHD_xs.png" />
 <%= yield %>
 </body>
 </html>
