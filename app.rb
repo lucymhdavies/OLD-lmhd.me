@@ -13,3 +13,7 @@ get '/ash/?' do
 	erb :ash
 end
 
+get '/qr/?' do
+	erb :qr
+end
+
